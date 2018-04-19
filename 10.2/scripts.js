@@ -2,12 +2,23 @@ var span = $('span');
     span.each(function(index, element) {
 });
 
+var ignored = ["spanElem0", "spanElem3" ];
+
+span.each(function(index, element) {
+	// if() { ?
+		$(element).css('color', 'red');
+	//};
+});
+	
+
+/*
 span.each(function(index, element) {
 	if(index % 2 == 0) {
 		$(element).css('color', 'red');
 	};
 });
-
+*/
+// $('span:even').css('color', 'red');
 var paragraphs = $('p');
 paragraphs.each(function(index, element) {
     var button = '<button class="btn" data-tmp="' + index + '">Click me</button>';
@@ -17,3 +28,4 @@ paragraphs.each(function(index, element) {
 $('button').click(function(){
 	alert($(this).attr('data-tmp'));
 });
+
