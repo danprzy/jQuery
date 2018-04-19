@@ -16,7 +16,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -40,6 +39,8 @@ ul {
   flex-flow: row;
   padding: 0;
   width: 2000px;
+
+
 }
 
 li {
@@ -53,9 +54,11 @@ li {
 
 img {
   object-fit: cover;
+  width: 400px;
+  height: 400px;
 }
 
-.prev, .next {
+#prev, #next {
   cursor: pointer;
   position: absolute;
   width: 50px;
@@ -71,10 +74,24 @@ img {
   color:#fff;
 }
 
- .prev {
+ #prev {
     left: -15px;
 }
 
- .next {
+ #next {
     right: -15px;
+}
+
+h1{
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  width:100px;
+  height:100px;
+  background-color:rgba(255, 0, 0,0.4);
+  margin-left: 40%;
+  line-height:100px;
+  color:#fff;
+  font-size:2.4em;
+  border-radius:50%;
 }
